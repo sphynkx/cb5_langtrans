@@ -47,6 +47,8 @@ Need to check all added translations manually. For example there was case that v
 
 Seems the language edit service in ClipBucket-v5 is some buggy for now (editions aren't apply to database). Better to edit translations in database directly (for example via PHPMyAdmin).
 
+The [googletrans](https://pypi.org/project/googletrans/) has broken batch translation and need to additionally convert array to string and back.
+
 
 ## Useful commands
 For development purposes would be better to use the separate copy of actual ClipBucket database. At first need to create new database:
