@@ -64,7 +64,7 @@ Next get backup of actual database and load it to this copy:
 mysqldump -uroot -p clipbucket5 > clipbucket5_backup.sql
 mysql -uroot -p clipbucket5dev < clipbucket5_backup.sql
 ```
-To check is everything OK modify your `/var/www/clipbucket/includes/config.php` - change database name to that `clipbucket5dev`. Alternatively you may add line `dbname = clipbucket5dev` before declaration of `config` (line 90).
+To check is everything OK modify your `/var/www/clipbucket/includes/config.php` - change database name to that `clipbucket5dev`. Alternatively you may add line `dbname = clipbucket5dev` before declaration of `config` (line 91).
 
 If something went wrong.. You may remove added language - find its `language_id` in `cb_languages` table:
 ```

@@ -24,8 +24,9 @@ With code as param checks for correctness of destination language and its code.
 	'''
 	if code == "NONE": 
 		print("Available languages and their codes:")
-		for key, value, in enumerate(LANGCODES.items()):  print(f"{key}: {value[0].capitalize()}:   {value[1]}\t".expandtabs(40), end="\n"*(not key%4))
+		for key, value in enumerate(LANGCODES.items()):  print(f"{key}: {value[0].capitalize()}:   {value[1]}\t".expandtabs(40), end="\n"*(not key%4))
 		print("\n")
+		sys.exit(1)
 	else:
 		for key, value in LANGCODES.items():
 			if value == code:
