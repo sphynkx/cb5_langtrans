@@ -108,9 +108,6 @@ def sql_lang_select(cmd):
 		with db.cursor() as cursor:
 			result = cursor.execute(cmd)
 			rows = cursor.fetchall()
-##            for row in rows:
-##                print(row)
-##		db.close()
 		return rows
 	else:
 		print("Could not connect")
